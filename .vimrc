@@ -17,6 +17,8 @@ set splitbelow                  " Split horizontal windows below to the current 
 set ruler                       " Show cursor coordinates
 set ttyfast
 set lazyredraw
+set list                        " show invisible characters
+set listchars=tab:>·,nbsp:·     " but only show tabs and non-breakable space
 
 " No TABS please
 set tabstop=8
@@ -56,6 +58,7 @@ endfunc
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+" Don't blame trailing whitespace while typing
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
