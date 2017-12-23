@@ -4,3 +4,6 @@
 [submodule "misc/vim-pathogen"]
 	path = misc/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
