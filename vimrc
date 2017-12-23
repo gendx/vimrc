@@ -40,6 +40,8 @@ endif
 " ========== Key bindings ==========
 " Do not show stupid q: window
 map q: :q
+" Clear last search highlighting
+nnoremap <C-L> :noh<CR><C-L>
 
 " ========== Syntax ==========
 syntax on
@@ -62,6 +64,10 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+
+" ========== Git ==========
+set updatetime=250              " Faster update time for gitgutter
 
 
 " ========== OCaml ==========
