@@ -23,14 +23,25 @@ set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-syntax on
-filetype indent plugin on
 
 " Search
 set incsearch                   " Shows the match while typing
 set hlsearch                    " Highlight found searches
 set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
+
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
+" ========== Key bindings ==========
+" Do not show stupid q: window
+map q: :q
+
+" ========== Syntax ==========
+syntax on
+filetype indent plugin on
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
