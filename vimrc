@@ -6,6 +6,11 @@ call pathogen#helptags()
 " Colors
 colorscheme gendx
 
+" More colors for GNOME terminal
+if $TERM == 'xterm'
+  set t_Co=256
+endif
+
 " ========== Settings ==========
 set noerrorbells                " No beeps
 set number                      " Show line numbers
