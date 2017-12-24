@@ -22,3 +22,6 @@
 [submodule "bundle/vim-cpp-enhanced-highlight"]
 	path = bundle/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = https://github.com/cespare/vim-toml
