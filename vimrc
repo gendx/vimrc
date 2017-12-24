@@ -1,6 +1,7 @@
 " ========== General ==========
 " Pathogen
 execute pathogen#infect()
+call pathogen#helptags()
 
 " Colors
 colorscheme gendx
@@ -59,6 +60,12 @@ endfunc
 
 " ========== Bundles ==========
 set updatetime=250              " Faster update time for gitgutter
+let g:loaded_zip = 1            " No unzip thanks
+let g:loaded_gzip = 1           " No ungzip thanks
+" Auto-complete top to bottom
+" TODO: Behavior equivalent to reverse list of <C-P> ??
+let g:SuperTabDefaultCompletionType = "<C-N>"
+set completeopt=menuone,preview " Show menu even with only one match
 
 
 " ========== OCaml ==========
