@@ -73,6 +73,23 @@ let g:SuperTabDefaultCompletionType = "<C-N>"
 set completeopt=menuone,preview " Show menu even with only one match
 
 
+" ========== Rust ==========
+" Rustfmt
+let g:rustfmt_autosave = 1
+
+
+" ========== C/C++ ==========
+" Syntax
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+" This one is "a little slow on large files"
+"let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+" Once concepts land in C++
+"let g:cpp_concepts_highlight = 1
+
+
 " ========== OCaml ==========
 " Indenting
 autocmd FileType ocaml :setlocal sw=2 ts=4 sts=2
@@ -84,9 +101,4 @@ set rtp^="~/.opam/system/share/ocp-indent/vim"
 " ========== Scala ==========
 " Indenting
 autocmd FileType scala :setlocal sw=2 ts=4 sts=2
-
-
-" ========== Rust ==========
-" Rustfmt
-let g:rustfmt_autosave = 1
 
