@@ -12,6 +12,7 @@ if $TERM == 'xterm'
 endif
 
 " ========== Settings ==========
+set encoding=utf-8              " For UTF-8 characters in `listchars`
 set noerrorbells                " No beeps
 set number                      " Show line numbers
 set showcmd                     " Show me what I'm typing
