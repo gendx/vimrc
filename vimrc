@@ -73,6 +73,13 @@ let g:loaded_gzip = 1           " No ungzip thanks
 let g:SuperTabDefaultCompletionType = "<C-N>"
 set completeopt=menuone,preview " Show menu even with only one match
 
+" Limit of visible git diff signs (default = 500)
+" let g:gitgutter_max_signs = 500
+" Colorize the diff signs. See https://github.com/airblade/vim-gitgutter/issues/614
+highlight GitGutterAdd    guifg=#009900 guibg=#073642 ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 guibg=#073642 ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 guibg=#073642 ctermfg=1 ctermbg=0
+
 
 " ========== Rust ==========
 " Rustfmt
